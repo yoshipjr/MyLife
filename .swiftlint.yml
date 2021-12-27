@@ -1,6 +1,6 @@
 # Lint対象に追加するパス
 included:
-- FurusatoChoice
+- MyLife
 
 # Lint対象から除外するパス
 excluded:

@@ -51,24 +51,28 @@ struct HTTPStatusCode {
 
 public protocol Request {
     associatedtype Response: Decodable
-    associatedtype Paramaters: Encodable
+    associatedtype Parameters: Encodable
     associatedtype PathComponent
 
     var headers: [String: String] { get }
     var method: HTTPMethod { get }
-    var paramaters: Paramaters { get }
+    var parameters: Parameters { get }
     var queryItems: [URLQueryItem]? { get }
     var body: Data? { get }
     var baseURL: String { get }
     var path: String { get }
     var wantCache: Bool { get }
     var setCookie: Bool { get }
-    var localDataIntercptor: (Paramaters) -> Response? { get }
+    var localDataInterceptor: (Parameters) -> Response? { get }
     var successHandler: (Response) -> Void { get }
     var failureHandler: (Error) -> Void { get }
 
+    #if DEBUG
+    var testDataPath: URL? { get }
+    #endif
+
     init(
-        paramater: Paramaters,
+        parameter: Parameters,
         pathComponent: PathComponent
     )
 }
@@ -84,14 +88,14 @@ public extension Request {
 
     var queryItems: [URLQueryItem]? {
         let query: [URLQueryItem]
-        if let params = paramaters as? [Encodable] {
+        if let params = parameters as? [Encodable] {
             query = params
                 .flatMap { param in param.dictionary.map { key, value in
                     URLQueryItem(name: key, value: value?.description ?? "")
                 }
             }
         } else {
-            query = paramaters.dictionary.map { key, value in
+            query = parameters.dictionary.map { key, value in
                 URLQueryItem(name: key, value: value?.description ?? "")
             }
         }
@@ -105,7 +109,7 @@ public extension Request {
     }
 
     var body: Data? {
-        try? JSONEncoder().encode(paramaters)
+        try? JSONEncoder().encode(parameters)
     }
 
     var headers: [String: String] {
@@ -120,7 +124,7 @@ public extension Request {
 
     var wantCache: Bool { false }
 
-    var localDataIntercptor: (Paramaters) -> Response? { { _ in nil } }
+    var localDataIntercptor: (Parameters) -> Response? { { _ in nil } }
     var successHandler: (Response) -> Void { { _ in } }
     var failureHandler: (Error) -> Void { { _ in } }
     var boundary: String {
