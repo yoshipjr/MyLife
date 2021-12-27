@@ -55,7 +55,7 @@ extension DecodingError {
         return context?.debugDescription ?? ""
     }
 
-    var key: String {
+    var keys: String {
         return context?.codingPath.map { $0.stringValue }.description ?? ""
     }
 }
