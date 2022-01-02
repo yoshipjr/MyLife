@@ -73,6 +73,8 @@ struct APIClient {
         urlRequest.httpBody = requestItem.body
         requestItem.headers.forEach { urlRequest.addValue($1, forHTTPHeaderField: $0) }
 
+        Logger.debug(message: urlRequest.curlString)
+
         return urlRequest
     }
 }
