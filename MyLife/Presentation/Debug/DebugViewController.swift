@@ -32,7 +32,6 @@ final class DebugViewController: UIViewController {
         self.title = "デバッグ画面"
         self.view.addSubview(tableView)
         self.setupLayoutConstraint()
-        tableView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
     }
 
     private func setupLayoutConstraint() {
