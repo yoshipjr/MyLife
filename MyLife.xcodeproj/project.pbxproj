@@ -27,6 +27,7 @@
 		7DF5DB2C2782AFA500F70A9F /* ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF5DB2B2782AFA500F70A9F /* ColorResource.swift */; };
 		7DF5DB2E2782B0CA00F70A9F /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF5DB2D2782B0CA00F70A9F /* UIColor+Extension.swift */; };
 		7DF5DB302782B42B00F70A9F /* DebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF5DB2F2782B42B00F70A9F /* DebugViewController.swift */; };
+		7DF5DB322782B5B500F70A9F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF5DB312782B5B500F70A9F /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		7DF5DB2B2782AFA500F70A9F /* ColorResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorResource.swift; sourceTree = "<group>"; };
 		7DF5DB2D2782B0CA00F70A9F /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		7DF5DB2F2782B42B00F70A9F /* DebugViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugViewController.swift; sourceTree = "<group>"; };
+		7DF5DB312782B5B500F70A9F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 				7DAD05CE27783894001DAF62 /* ViewController.swift */,
 				7DF5DB262782A73900F70A9F /* TabBarController.swift */,
 				7DF5DB2F2782B42B00F70A9F /* DebugViewController.swift */,
+				7DF5DB312782B5B500F70A9F /* SearchViewController.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DF5DB322782B5B500F70A9F /* SearchViewController.swift in Sources */,
 				7DAD05CF27783894001DAF62 /* ViewController.swift in Sources */,
 				7D7028CF2779EC1800434B1C /* TestDataFetchRequest.swift in Sources */,
 				7DAD05CB27783894001DAF62 /* AppDelegate.swift in Sources */,
