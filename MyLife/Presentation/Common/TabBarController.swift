@@ -3,7 +3,7 @@ import UIKit
 
 final class TabBarController: UITabBarController {
 
-    enum TabbarItem {
+    enum TabBarItem {
         case home
         case search
         case favorite
@@ -11,7 +11,7 @@ final class TabBarController: UITabBarController {
         case debug
         #endif
 
-        var tabbarItem: UITabBarItem {
+        var item: UITabBarItem {
             switch self {
                 case .home:
                     let homeImage = ImageResource.Menu.home
@@ -49,9 +49,51 @@ final class TabBarController: UITabBarController {
         }
     }
 
+    private let homeScreen: NavigationController = {
+        let homeScreen = NavigationController(rootVC: HomeViewController(), naviBarClass: nil, toolbarClass: nil)
+        homeScreen.tabBarItem = TabBarItem.home.item
+        return homeScreen
+    }()
+
+    private let searchScreen: NavigationController = {
+        let debugScreen = NavigationController(rootVC: SearchViewController(), naviBarClass: nil, toolbarClass: nil)
+        debugScreen.tabBarItem = TabBarItem.search.item
+        return debugScreen
+    }()
+
+    private let favoriteScreen: NavigationController = {
+        let favoriteScreen = NavigationController(rootVC: FavoriteViewController(), naviBarClass: nil, toolbarClass: nil)
+        favoriteScreen.tabBarItem = TabBarItem.favorite.item
+        return favoriteScreen
+    }()
+
+    private let debugScreen: NavigationController = {
+        let debugScreen = NavigationController(rootVC: DebugViewController(), naviBarClass: nil, toolbarClass: nil)
+        debugScreen.tabBarItem = TabBarItem.debug.item
+        return debugScreen
+    }()
+
+    private var tabViewControllers: [UIViewController] {
+        var viewControllers = [ homeScreen, searchScreen, favoriteScreen]
+        #if DEBUG
+        viewControllers.append(debugScreen)
+        #endif
+        return viewControllers
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = ColorResource.Base.white
+
+        self.viewControllers = tabViewControllers
+
+        if #available(iOS 15.0, *) {
+            let appearance = UITabBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            appearance.backgroundColor = ColorResource.Base.white
+
+            self.tabBar.standardAppearance = appearance
+            self.tabBar.scrollEdgeAppearance = tabBar.standardAppearance
+        }
     }
 }
-

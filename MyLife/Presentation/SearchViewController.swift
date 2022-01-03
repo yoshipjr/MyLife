@@ -3,6 +3,6 @@ import UIKit
 final class SearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .red
+        self.view.backgroundColor = .blue
     }
 }
