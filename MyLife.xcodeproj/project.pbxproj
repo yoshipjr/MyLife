@@ -15,7 +15,7 @@
 		7D7028D7277C4ECD00434B1C /* URLRequest+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7028D6277C4ECD00434B1C /* URLRequest+Extension.swift */; };
 		7DAD05CB27783894001DAF62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAD05CA27783894001DAF62 /* AppDelegate.swift */; };
 		7DAD05CD27783894001DAF62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAD05CC27783894001DAF62 /* SceneDelegate.swift */; };
-		7DAD05CF27783894001DAF62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAD05CE27783894001DAF62 /* ViewController.swift */; };
+		7DAD05CF27783894001DAF62 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAD05CE27783894001DAF62 /* HomeViewController.swift */; };
 		7DAD05D227783894001DAF62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DAD05D027783894001DAF62 /* Main.storyboard */; };
 		7DAD05D427783898001DAF62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DAD05D327783898001DAF62 /* Assets.xcassets */; };
 		7DAD05D727783898001DAF62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DAD05D527783898001DAF62 /* LaunchScreen.storyboard */; };
@@ -28,6 +28,8 @@
 		7DF5DB2E2782B0CA00F70A9F /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF5DB2D2782B0CA00F70A9F /* UIColor+Extension.swift */; };
 		7DF5DB302782B42B00F70A9F /* DebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF5DB2F2782B42B00F70A9F /* DebugViewController.swift */; };
 		7DF5DB322782B5B500F70A9F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF5DB312782B5B500F70A9F /* SearchViewController.swift */; };
+		7DF5DB342782BA4300F70A9F /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF5DB332782BA4300F70A9F /* FavoriteViewController.swift */; };
+		7DF5DB372782BEA700F70A9F /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF5DB362782BEA700F70A9F /* NavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +59,7 @@
 		7DAD05C727783894001DAF62 /* MyLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DAD05CA27783894001DAF62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DAD05CC27783894001DAF62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7DAD05CE27783894001DAF62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7DAD05CE27783894001DAF62 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7DAD05D127783894001DAF62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7DAD05D327783898001DAF62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DAD05D627783898001DAF62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -73,6 +75,8 @@
 		7DF5DB2D2782B0CA00F70A9F /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		7DF5DB2F2782B42B00F70A9F /* DebugViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugViewController.swift; sourceTree = "<group>"; };
 		7DF5DB312782B5B500F70A9F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		7DF5DB332782BA4300F70A9F /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		7DF5DB362782BEA700F70A9F /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,10 +213,11 @@
 		7DF5DB242782A69600F70A9F /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				7DAD05CE27783894001DAF62 /* ViewController.swift */,
-				7DF5DB262782A73900F70A9F /* TabBarController.swift */,
+				7DF5DB352782BE8D00F70A9F /* Common */,
+				7DAD05CE27783894001DAF62 /* HomeViewController.swift */,
 				7DF5DB2F2782B42B00F70A9F /* DebugViewController.swift */,
 				7DF5DB312782B5B500F70A9F /* SearchViewController.swift */,
+				7DF5DB332782BA4300F70A9F /* FavoriteViewController.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -233,6 +238,15 @@
 				7DF5DB2D2782B0CA00F70A9F /* UIColor+Extension.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		7DF5DB352782BE8D00F70A9F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7DF5DB362782BEA700F70A9F /* NavigationController.swift */,
+				7DF5DB262782A73900F70A9F /* TabBarController.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,11 +403,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DF5DB322782B5B500F70A9F /* SearchViewController.swift in Sources */,
-				7DAD05CF27783894001DAF62 /* ViewController.swift in Sources */,
+				7DAD05CF27783894001DAF62 /* HomeViewController.swift in Sources */,
 				7D7028CF2779EC1800434B1C /* TestDataFetchRequest.swift in Sources */,
 				7DAD05CB27783894001DAF62 /* AppDelegate.swift in Sources */,
 				7DF5DB292782A81B00F70A9F /* ImageResource.swift in Sources */,
+				7DF5DB372782BEA700F70A9F /* NavigationController.swift in Sources */,
 				7DF5DB272782A73900F70A9F /* TabBarController.swift in Sources */,
+				7DF5DB342782BA4300F70A9F /* FavoriteViewController.swift in Sources */,
 				7DF5DB2C2782AFA500F70A9F /* ColorResource.swift in Sources */,
 				7D7028CB277881AA00434B1C /* BaseRequest.swift in Sources */,
 				7DAD05CD27783894001DAF62 /* SceneDelegate.swift in Sources */,
