@@ -30,6 +30,9 @@
 		7DF5DB322782B5B500F70A9F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF5DB312782B5B500F70A9F /* SearchViewController.swift */; };
 		7DF5DB342782BA4300F70A9F /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF5DB332782BA4300F70A9F /* FavoriteViewController.swift */; };
 		7DF5DB372782BEA700F70A9F /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF5DB362782BEA700F70A9F /* NavigationController.swift */; };
+		7DF5DB3B2782DFFB00F70A9F /* DebugListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF5DB3A2782DFFB00F70A9F /* DebugListViewCell.swift */; };
+		7DF5DB3D2782E62500F70A9F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF5DB3C2782E62500F70A9F /* UIView+Extension.swift */; };
+		7DF5DB3F2782E68600F70A9F /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF5DB3E2782E68600F70A9F /* NSObject+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,9 @@
 		7DF5DB312782B5B500F70A9F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		7DF5DB332782BA4300F70A9F /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		7DF5DB362782BEA700F70A9F /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		7DF5DB3A2782DFFB00F70A9F /* DebugListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugListViewCell.swift; sourceTree = "<group>"; };
+		7DF5DB3C2782E62500F70A9F /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		7DF5DB3E2782E68600F70A9F /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,9 +216,9 @@
 		7DF5DB242782A69600F70A9F /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				7DF5DB392782DFE700F70A9F /* Debug */,
 				7DF5DB352782BE8D00F70A9F /* Common */,
 				7DAD05CE27783894001DAF62 /* HomeViewController.swift */,
-				7DF5DB2F2782B42B00F70A9F /* DebugViewController.swift */,
 				7DF5DB312782B5B500F70A9F /* SearchViewController.swift */,
 				7DF5DB332782BA4300F70A9F /* FavoriteViewController.swift */,
 			);
@@ -233,6 +239,8 @@
 			isa = PBXGroup;
 			children = (
 				7DF5DB2D2782B0CA00F70A9F /* UIColor+Extension.swift */,
+				7DF5DB3C2782E62500F70A9F /* UIView+Extension.swift */,
+				7DF5DB3E2782E68600F70A9F /* NSObject+Extension.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -255,6 +263,15 @@
 				7DAD05D527783898001DAF62 /* LaunchScreen.storyboard */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		7DF5DB392782DFE700F70A9F /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				7DF5DB2F2782B42B00F70A9F /* DebugViewController.swift */,
+				7DF5DB3A2782DFFB00F70A9F /* DebugListViewCell.swift */,
+			);
+			path = Debug;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,6 +429,7 @@
 			files = (
 				7DF5DB322782B5B500F70A9F /* SearchViewController.swift in Sources */,
 				7DAD05CF27783894001DAF62 /* HomeViewController.swift in Sources */,
+				7DF5DB3B2782DFFB00F70A9F /* DebugListViewCell.swift in Sources */,
 				7D7028CF2779EC1800434B1C /* TestDataFetchRequest.swift in Sources */,
 				7DAD05CB27783894001DAF62 /* AppDelegate.swift in Sources */,
 				7DF5DB292782A81B00F70A9F /* ImageResource.swift in Sources */,
@@ -421,8 +439,10 @@
 				7DF5DB2C2782AFA500F70A9F /* ColorResource.swift in Sources */,
 				7D7028CB277881AA00434B1C /* BaseRequest.swift in Sources */,
 				7DAD05CD27783894001DAF62 /* SceneDelegate.swift in Sources */,
+				7DF5DB3D2782E62500F70A9F /* UIView+Extension.swift in Sources */,
 				7DF5DB302782B42B00F70A9F /* DebugViewController.swift in Sources */,
 				7D7028C82778811F00434B1C /* APIClient.swift in Sources */,
+				7DF5DB3F2782E68600F70A9F /* NSObject+Extension.swift in Sources */,
 				7D7028CD27788FB300434B1C /* APIError.swift in Sources */,
 				7DF5DB2E2782B0CA00F70A9F /* UIColor+Extension.swift in Sources */,
 				7D7028D7277C4ECD00434B1C /* URLRequest+Extension.swift in Sources */,

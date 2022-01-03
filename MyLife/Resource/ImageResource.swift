@@ -1,4 +1,3 @@
-import Foundation
 import UIKit
 
 struct ImageResource {
@@ -7,5 +6,6 @@ struct ImageResource {
         static let search = UIImage(systemName: "magnifyingglass")
         static let favorite = UIImage(systemName: "heart.fill")
         static let debug = UIImage(systemName: "gamecontroller.fill")
+        static let menuIcon = UIImage(systemName: "iphone.homebutton.badge.play")
     }
 }
