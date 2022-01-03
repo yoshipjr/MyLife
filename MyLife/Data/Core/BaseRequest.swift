@@ -136,7 +136,6 @@ public extension Request {
     }
 }
 
-
 private extension Encodable {
     var dictionary: [String: CustomStringConvertible?] {
         (
