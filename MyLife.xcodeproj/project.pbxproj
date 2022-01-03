@@ -179,15 +179,12 @@
 		7DAD05C927783894001DAF62 /* MyLife */ = {
 			isa = PBXGroup;
 			children = (
+				7DF5DB382782C68100F70A9F /* Configuration */,
 				7DF5DB2A2782AF0800F70A9F /* Utility */,
 				7DF5DB252782A6AB00F70A9F /* Resource */,
 				7DF5DB242782A69600F70A9F /* Presentation */,
 				7D7028C3277880AB00434B1C /* Domain */,
 				7D7028C22778809A00434B1C /* Data */,
-				7DAD05CA27783894001DAF62 /* AppDelegate.swift */,
-				7DAD05CC27783894001DAF62 /* SceneDelegate.swift */,
-				7DAD05D027783894001DAF62 /* Main.storyboard */,
-				7DAD05D527783898001DAF62 /* LaunchScreen.storyboard */,
 				7DAD05D827783898001DAF62 /* Info.plist */,
 			);
 			path = MyLife;
@@ -247,6 +244,17 @@
 				7DF5DB262782A73900F70A9F /* TabBarController.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		7DF5DB382782C68100F70A9F /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				7DAD05CA27783894001DAF62 /* AppDelegate.swift */,
+				7DAD05CC27783894001DAF62 /* SceneDelegate.swift */,
+				7DAD05D027783894001DAF62 /* Main.storyboard */,
+				7DAD05D527783898001DAF62 /* LaunchScreen.storyboard */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
