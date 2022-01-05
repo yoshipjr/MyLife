@@ -72,7 +72,8 @@ extension UIPartsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch UIParts(rawValue: indexPath.row) {
             case .indentLabel:
-                break
+                let vc = IndentLabelViewController()
+                self.navigationController?.pushViewController(vc, animated: true)
 
             case .button:
                 break
