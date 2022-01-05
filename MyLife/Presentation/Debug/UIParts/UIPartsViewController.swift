@@ -1,21 +1,21 @@
 import UIKit
 
-enum DebugMenu: Int, CaseIterable {
-    case webView = 0
-    case UIParts
+enum UIParts: Int, CaseIterable {
+    case indentLabel = 0
+    case button
 
     var contents: (title: String, description: String, url: URL) {
         switch self {
-            case .webView:
-                return (title: "webView", description: "webViewの表示", url: URL(string: "emptyUrl")!)
+            case .indentLabel:
+                return (title: "IndentLabel", description: "中身によって大きさの変わるLabel", url: URL(string: "emptyUrl")!)
 
-            case .UIParts:
-                return (title: "UIparts", description: "UIpartsの表示", url: URL(string: "emptyUrl")!)
+            case .button:
+                return (title: "Button", description: "標準ボタンの表示", url: URL(string: "emptyUrl")!)
         }
     }
 }
 
-final class DebugViewController: UIViewController {
+final class UIPartsViewController: UIViewController {
 
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
@@ -29,12 +29,12 @@ final class DebugViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "デバッグ画面"
-        self.view.addSubview(tableView)
-        self.setupLayoutConstraint()
+
+        setupLayout()
     }
 
-    private func setupLayoutConstraint() {
+    private func setupLayout() {
+        self.view.addSubview(tableView)
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: self.view.topAnchor),
             tableView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
@@ -44,41 +44,40 @@ final class DebugViewController: UIViewController {
     }
 }
 
-extension DebugViewController: UITableViewDataSource {
+extension UIPartsViewController: UITableViewDataSource {
 
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return DebugMenu.allCases.count
+        UIParts.allCases.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard
-            let cell = tableView.dequeueReusableCell(withIdentifier: DebugListViewCell.identifier, for: indexPath) as? DebugListViewCell
-        else  {
-            return UITableViewCell()
-        }
-        cell.textLabel?.text = DebugMenu.allCases[indexPath.row].contents.title
-        cell.detailTextLabel?.text = DebugMenu.allCases[indexPath.row].contents.description
+            let cell = tableView.dequeueReusableCell(withIdentifier: DebugListViewCell.identifier, for: indexPath ) as? DebugListViewCell
+        else { return UITableViewCell() }
+
+        cell.textLabel?.text = UIParts.allCases[indexPath.row].contents.title
+        cell.detailTextLabel?.text = UIParts.allCases[indexPath.row].contents.description
         cell.imageView?.image = ImageResource.Menu.menuIcon
         cell.accessoryType = .disclosureIndicator
         return cell
+
     }
 }
 
-extension DebugViewController: UITableViewDelegate {
+extension UIPartsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch indexPath.row {
-            case DebugMenu.webView.rawValue:
-                // TODO: webViewControllerの作成
+        switch UIParts(rawValue: indexPath.row) {
+            case .indentLabel:
                 break
 
-            case DebugMenu.UIParts.rawValue:
-                let vc = UIPartsViewController()
-                self.navigationController?.pushViewController(vc, animated: true)
-            default:
+            case .button:
+                break
+
+            case .none:
                 break
         }
     }
