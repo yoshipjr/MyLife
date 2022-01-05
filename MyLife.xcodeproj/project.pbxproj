@@ -13,6 +13,9 @@
 		7D7028CF2779EC1800434B1C /* TestDataFetchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7028CE2779EC1800434B1C /* TestDataFetchRequest.swift */; };
 		7D7028D1277B3AF500434B1C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7028D0277B3AF500434B1C /* Logger.swift */; };
 		7D7028D7277C4ECD00434B1C /* URLRequest+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7028D6277C4ECD00434B1C /* URLRequest+Extension.swift */; };
+		7DA594622785D92200E204CD /* UIPartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA594612785D92200E204CD /* UIPartsViewController.swift */; };
+		7DA594652785DDF200E204CD /* IndentLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA594642785DDF200E204CD /* IndentLabel.swift */; };
+		7DA594682785DF6400E204CD /* IndentLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA594672785DF6400E204CD /* IndentLabelViewController.swift */; };
 		7DAD05CB27783894001DAF62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAD05CA27783894001DAF62 /* AppDelegate.swift */; };
 		7DAD05CD27783894001DAF62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAD05CC27783894001DAF62 /* SceneDelegate.swift */; };
 		7DAD05CF27783894001DAF62 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAD05CE27783894001DAF62 /* HomeViewController.swift */; };
@@ -59,6 +62,9 @@
 		7D7028CE2779EC1800434B1C /* TestDataFetchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDataFetchRequest.swift; sourceTree = "<group>"; };
 		7D7028D0277B3AF500434B1C /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		7D7028D6277C4ECD00434B1C /* URLRequest+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extension.swift"; sourceTree = "<group>"; };
+		7DA594612785D92200E204CD /* UIPartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPartsViewController.swift; sourceTree = "<group>"; };
+		7DA594642785DDF200E204CD /* IndentLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentLabel.swift; sourceTree = "<group>"; };
+		7DA594672785DF6400E204CD /* IndentLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentLabelViewController.swift; sourceTree = "<group>"; };
 		7DAD05C727783894001DAF62 /* MyLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DAD05CA27783894001DAF62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DAD05CC27783894001DAF62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -162,6 +168,30 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		7DA594602785D90A00E204CD /* UIParts */ = {
+			isa = PBXGroup;
+			children = (
+				7DA594612785D92200E204CD /* UIPartsViewController.swift */,
+			);
+			path = UIParts;
+			sourceTree = "<group>";
+		};
+		7DA594632785DDD400E204CD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7DA594642785DDF200E204CD /* IndentLabel.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		7DA594662785DF4100E204CD /* CompoentsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7DA594672785DF6400E204CD /* IndentLabelViewController.swift */,
+			);
+			path = CompoentsViewController;
+			sourceTree = "<group>";
+		};
 		7DAD05BE27783894001DAF62 = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +246,8 @@
 		7DF5DB242782A69600F70A9F /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				7DA594662785DF4100E204CD /* CompoentsViewController */,
+				7DA594632785DDD400E204CD /* Components */,
 				7DF5DB392782DFE700F70A9F /* Debug */,
 				7DF5DB352782BE8D00F70A9F /* Common */,
 				7DAD05CE27783894001DAF62 /* HomeViewController.swift */,
@@ -268,6 +300,7 @@
 		7DF5DB392782DFE700F70A9F /* Debug */ = {
 			isa = PBXGroup;
 			children = (
+				7DA594602785D90A00E204CD /* UIParts */,
 				7DF5DB2F2782B42B00F70A9F /* DebugViewController.swift */,
 				7DF5DB3A2782DFFB00F70A9F /* DebugListViewCell.swift */,
 			);
@@ -435,12 +468,15 @@
 				7DF5DB292782A81B00F70A9F /* ImageResource.swift in Sources */,
 				7DF5DB372782BEA700F70A9F /* NavigationController.swift in Sources */,
 				7DF5DB272782A73900F70A9F /* TabBarController.swift in Sources */,
+				7DA594682785DF6400E204CD /* IndentLabelViewController.swift in Sources */,
 				7DF5DB342782BA4300F70A9F /* FavoriteViewController.swift in Sources */,
 				7DF5DB2C2782AFA500F70A9F /* ColorResource.swift in Sources */,
+				7DA594652785DDF200E204CD /* IndentLabel.swift in Sources */,
 				7D7028CB277881AA00434B1C /* BaseRequest.swift in Sources */,
 				7DAD05CD27783894001DAF62 /* SceneDelegate.swift in Sources */,
 				7DF5DB3D2782E62500F70A9F /* UIView+Extension.swift in Sources */,
 				7DF5DB302782B42B00F70A9F /* DebugViewController.swift in Sources */,
+				7DA594622785D92200E204CD /* UIPartsViewController.swift in Sources */,
 				7D7028C82778811F00434B1C /* APIClient.swift in Sources */,
 				7DF5DB3F2782E68600F70A9F /* NSObject+Extension.swift in Sources */,
 				7D7028CD27788FB300434B1C /* APIError.swift in Sources */,
