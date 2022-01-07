@@ -3,6 +3,8 @@ import UIKit
 enum UIParts: Int, CaseIterable {
     case indentLabel = 0
     case button
+    case collectionView
+    case pinterest
 
     var contents: (title: String, description: String, url: URL) {
         switch self {
@@ -11,6 +13,11 @@ enum UIParts: Int, CaseIterable {
 
             case .button:
                 return (title: "Button", description: "標準ボタンの表示", url: URL(string: "emptyUrl")!)
+            case .collectionView:
+                return (title: "collectionView", description: "compositionalLayoutで実装", url: URL(string: "emptyUrl")!)
+
+            case .pinterest:
+                return (title: "collectionView", description: "pinterestっぽいUIで実装", url: URL(string: "emptyUrl")!)
         }
     }
 }
@@ -78,6 +85,12 @@ extension UIPartsViewController: UITableViewDelegate {
             case .button:
                 break
 
+            case .collectionView:
+                break
+
+            case .pinterest:
+                break
+                
             case .none:
                 break
         }
