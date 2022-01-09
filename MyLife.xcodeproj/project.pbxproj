@@ -16,6 +16,7 @@
 		7D9688C0278B08F5002DAB46 /* SampleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9688BF278B08F5002DAB46 /* SampleCollectionViewController.swift */; };
 		7D9688C3278B1AC0002DAB46 /* SampleCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9688C2278B1AC0002DAB46 /* SampleCollectionViewDataSource.swift */; };
 		7D9688C5278B1BAE002DAB46 /* SampleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9688C4278B1BAE002DAB46 /* SampleCollectionViewCell.swift */; };
+		7D9688C7278B2C03002DAB46 /* SampleAreaSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9688C6278B2C03002DAB46 /* SampleAreaSection.swift */; };
 		7DA594622785D92200E204CD /* UIPartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA594612785D92200E204CD /* UIPartsViewController.swift */; };
 		7DA594652785DDF200E204CD /* IndentLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA594642785DDF200E204CD /* IndentLabel.swift */; };
 		7DA594682785DF6400E204CD /* IndentLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA594672785DF6400E204CD /* IndentLabelViewController.swift */; };
@@ -68,6 +69,7 @@
 		7D9688BF278B08F5002DAB46 /* SampleCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCollectionViewController.swift; sourceTree = "<group>"; };
 		7D9688C2278B1AC0002DAB46 /* SampleCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		7D9688C4278B1BAE002DAB46 /* SampleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCollectionViewCell.swift; sourceTree = "<group>"; };
+		7D9688C6278B2C03002DAB46 /* SampleAreaSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAreaSection.swift; sourceTree = "<group>"; };
 		7DA594612785D92200E204CD /* UIPartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPartsViewController.swift; sourceTree = "<group>"; };
 		7DA594642785DDF200E204CD /* IndentLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentLabel.swift; sourceTree = "<group>"; };
 		7DA594672785DF6400E204CD /* IndentLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentLabelViewController.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				7D9688BF278B08F5002DAB46 /* SampleCollectionViewController.swift */,
 				7D9688C2278B1AC0002DAB46 /* SampleCollectionViewDataSource.swift */,
 				7D9688C4278B1BAE002DAB46 /* SampleCollectionViewCell.swift */,
+				7D9688C6278B2C03002DAB46 /* SampleAreaSection.swift */,
 			);
 			path = SampleCollectionView;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 				7DAD05CF27783894001DAF62 /* HomeViewController.swift in Sources */,
 				7DF5DB3B2782DFFB00F70A9F /* DebugListViewCell.swift in Sources */,
 				7D7028CF2779EC1800434B1C /* TestDataFetchRequest.swift in Sources */,
+				7D9688C7278B2C03002DAB46 /* SampleAreaSection.swift in Sources */,
 				7D9688C0278B08F5002DAB46 /* SampleCollectionViewController.swift in Sources */,
 				7D9688C3278B1AC0002DAB46 /* SampleCollectionViewDataSource.swift in Sources */,
 				7DAD05CB27783894001DAF62 /* AppDelegate.swift in Sources */,
