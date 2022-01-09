@@ -86,7 +86,8 @@ extension UIPartsViewController: UITableViewDelegate {
                 break
 
             case .collectionView:
-                break
+                let vc = SampleCollectionViewController()
+                self.navigationController?.pushViewController(vc, animated: true)
 
             case .pinterest:
                 break
