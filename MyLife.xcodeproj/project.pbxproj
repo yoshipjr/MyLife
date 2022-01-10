@@ -17,6 +17,8 @@
 		7D9688C3278B1AC0002DAB46 /* SampleCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9688C2278B1AC0002DAB46 /* SampleCollectionViewDataSource.swift */; };
 		7D9688C5278B1BAE002DAB46 /* SampleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9688C4278B1BAE002DAB46 /* SampleCollectionViewCell.swift */; };
 		7D9688C7278B2C03002DAB46 /* SampleAreaSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9688C6278B2C03002DAB46 /* SampleAreaSection.swift */; };
+		7D9688C9278BD8A0002DAB46 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9688C8278BD8A0002DAB46 /* UICollectionView+Extension.swift */; };
+		7D9688CB278BDA42002DAB46 /* SampleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9688CA278BDA42002DAB46 /* SampleHeader.swift */; };
 		7DA594622785D92200E204CD /* UIPartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA594612785D92200E204CD /* UIPartsViewController.swift */; };
 		7DA594652785DDF200E204CD /* IndentLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA594642785DDF200E204CD /* IndentLabel.swift */; };
 		7DA594682785DF6400E204CD /* IndentLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA594672785DF6400E204CD /* IndentLabelViewController.swift */; };
@@ -70,6 +72,8 @@
 		7D9688C2278B1AC0002DAB46 /* SampleCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		7D9688C4278B1BAE002DAB46 /* SampleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCollectionViewCell.swift; sourceTree = "<group>"; };
 		7D9688C6278B2C03002DAB46 /* SampleAreaSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAreaSection.swift; sourceTree = "<group>"; };
+		7D9688C8278BD8A0002DAB46 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		7D9688CA278BDA42002DAB46 /* SampleHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHeader.swift; sourceTree = "<group>"; };
 		7DA594612785D92200E204CD /* UIPartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPartsViewController.swift; sourceTree = "<group>"; };
 		7DA594642785DDF200E204CD /* IndentLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentLabel.swift; sourceTree = "<group>"; };
 		7DA594672785DF6400E204CD /* IndentLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentLabelViewController.swift; sourceTree = "<group>"; };
@@ -183,6 +187,7 @@
 				7D9688C2278B1AC0002DAB46 /* SampleCollectionViewDataSource.swift */,
 				7D9688C4278B1BAE002DAB46 /* SampleCollectionViewCell.swift */,
 				7D9688C6278B2C03002DAB46 /* SampleAreaSection.swift */,
+				7D9688CA278BDA42002DAB46 /* SampleHeader.swift */,
 			);
 			path = SampleCollectionView;
 			sourceTree = "<group>";
@@ -293,6 +298,7 @@
 				7DF5DB2D2782B0CA00F70A9F /* UIColor+Extension.swift */,
 				7DF5DB3C2782E62500F70A9F /* UIView+Extension.swift */,
 				7DF5DB3E2782E68600F70A9F /* NSObject+Extension.swift */,
+				7D9688C8278BD8A0002DAB46 /* UICollectionView+Extension.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -488,7 +494,9 @@
 				7D9688C0278B08F5002DAB46 /* SampleCollectionViewController.swift in Sources */,
 				7D9688C3278B1AC0002DAB46 /* SampleCollectionViewDataSource.swift in Sources */,
 				7DAD05CB27783894001DAF62 /* AppDelegate.swift in Sources */,
+				7D9688C9278BD8A0002DAB46 /* UICollectionView+Extension.swift in Sources */,
 				7DF5DB292782A81B00F70A9F /* ImageResource.swift in Sources */,
+				7D9688CB278BDA42002DAB46 /* SampleHeader.swift in Sources */,
 				7DF5DB372782BEA700F70A9F /* NavigationController.swift in Sources */,
 				7DF5DB272782A73900F70A9F /* TabBarController.swift in Sources */,
 				7DA594682785DF6400E204CD /* IndentLabelViewController.swift in Sources */,

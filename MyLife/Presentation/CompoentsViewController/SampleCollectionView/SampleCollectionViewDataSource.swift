@@ -8,6 +8,7 @@ final class SampleCollectionViewDataSource: NSObject {
         with collectionView: UICollectionView
     ) {
         collectionView.register(SampleCollectionViewCell.self, forCellWithReuseIdentifier: SampleCollectionViewCell.identifier)
+        collectionView.register(SampleHeader.self, forSupplementaryViewOfKind: ElementKind.header.type, withReuseIdentifier: SampleHeader.identifier)
         collectionView.dataSource = self
         collectionView.delegate = self
     }
@@ -52,4 +53,24 @@ extension SampleCollectionViewDataSource: UICollectionViewDataSource {
         return cell
     }
 
+    func collectionView(
+        _ collectionView: UICollectionView,
+        viewForSupplementaryElementOfKind kind: String,
+        at indexPath: IndexPath
+    ) -> UICollectionReusableView {
+        switch kind {
+            case UICollectionView.elementKindSectionHeader:
+                guard
+                    let header =
+                        collectionView.dequeueReusableSupplementaryView(
+                            ofKind: ElementKind.header.type,
+                            withReuseIdentifier: SampleHeader.identifier, for: indexPath
+                        ) as? SampleHeader
+                else { return UICollectionReusableView() }
+                header.update(hasSubTitle: true)
+                return header
+            default:
+                return UICollectionReusableView()
+        }
+    }
 }
