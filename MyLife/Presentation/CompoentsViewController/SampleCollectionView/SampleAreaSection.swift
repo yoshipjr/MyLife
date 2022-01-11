@@ -23,6 +23,19 @@ struct SampleAreaSection: SectionConfiguration {
         section.orthogonalScrollingBehavior = .continuous
         section.contentInsets = .init(top: 0, leading: 4, bottom: 0, trailing: 0)
 
+        let headerItemSize = NSCollectionLayoutSize(
+            widthDimension: .fractionalWidth(1.0),
+            heightDimension: .estimated(0)
+        )
+
+        let headerItem = NSCollectionLayoutBoundarySupplementaryItem(
+            layoutSize: headerItemSize,
+            elementKind: ElementKind.header.type,
+            alignment: .top
+        )
+
+        section.boundarySupplementaryItems = [headerItem]
+
         return section
 
     }
@@ -32,6 +45,7 @@ struct SampleAreaSection: SectionConfiguration {
             withReuseIdentifier: SampleCollectionViewCell.identifier,
             for: indexPath) as? SampleCollectionViewCell {
             cell.backgroundColor = .blue
+            cell.configure(text: "test")
             return cell
         }
         return UICollectionViewCell()
