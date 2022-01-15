@@ -44,7 +44,8 @@ final class SampleCollectionViewController: UIViewController {
         collectionView.dataSource = dataSource
         collectionView.delegate = dataSource
         dataSource?.setup(sections: [
-            SampleAreaSection()
+            SampleAreaSection(),
+            SampleVerticalAreaSection()
         ])
         collectionView.reloadData()
     }

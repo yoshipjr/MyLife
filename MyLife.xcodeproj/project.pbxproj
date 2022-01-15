@@ -19,6 +19,8 @@
 		7D9688C7278B2C03002DAB46 /* SampleAreaSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9688C6278B2C03002DAB46 /* SampleAreaSection.swift */; };
 		7D9688C9278BD8A0002DAB46 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9688C8278BD8A0002DAB46 /* UICollectionView+Extension.swift */; };
 		7D9688CB278BDA42002DAB46 /* SampleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9688CA278BDA42002DAB46 /* SampleHeader.swift */; };
+		7D9E58B82792B76B00543FBA /* SampleVerticalAreaSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9E58B72792B76B00543FBA /* SampleVerticalAreaSection.swift */; };
+		7D9E58BA2792C33B00543FBA /* SampleFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9E58B92792C33B00543FBA /* SampleFooter.swift */; };
 		7DA594622785D92200E204CD /* UIPartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA594612785D92200E204CD /* UIPartsViewController.swift */; };
 		7DA594652785DDF200E204CD /* IndentLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA594642785DDF200E204CD /* IndentLabel.swift */; };
 		7DA594682785DF6400E204CD /* IndentLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA594672785DF6400E204CD /* IndentLabelViewController.swift */; };
@@ -74,6 +76,8 @@
 		7D9688C6278B2C03002DAB46 /* SampleAreaSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAreaSection.swift; sourceTree = "<group>"; };
 		7D9688C8278BD8A0002DAB46 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		7D9688CA278BDA42002DAB46 /* SampleHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHeader.swift; sourceTree = "<group>"; };
+		7D9E58B72792B76B00543FBA /* SampleVerticalAreaSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleVerticalAreaSection.swift; sourceTree = "<group>"; };
+		7D9E58B92792C33B00543FBA /* SampleFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleFooter.swift; sourceTree = "<group>"; };
 		7DA594612785D92200E204CD /* UIPartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPartsViewController.swift; sourceTree = "<group>"; };
 		7DA594642785DDF200E204CD /* IndentLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentLabel.swift; sourceTree = "<group>"; };
 		7DA594672785DF6400E204CD /* IndentLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentLabelViewController.swift; sourceTree = "<group>"; };
@@ -188,6 +192,8 @@
 				7D9688C4278B1BAE002DAB46 /* SampleCollectionViewCell.swift */,
 				7D9688C6278B2C03002DAB46 /* SampleAreaSection.swift */,
 				7D9688CA278BDA42002DAB46 /* SampleHeader.swift */,
+				7D9E58B72792B76B00543FBA /* SampleVerticalAreaSection.swift */,
+				7D9E58B92792C33B00543FBA /* SampleFooter.swift */,
 			);
 			path = SampleCollectionView;
 			sourceTree = "<group>";
@@ -488,6 +494,7 @@
 			files = (
 				7DF5DB322782B5B500F70A9F /* SearchViewController.swift in Sources */,
 				7DAD05CF27783894001DAF62 /* HomeViewController.swift in Sources */,
+				7D9E58B82792B76B00543FBA /* SampleVerticalAreaSection.swift in Sources */,
 				7DF5DB3B2782DFFB00F70A9F /* DebugListViewCell.swift in Sources */,
 				7D7028CF2779EC1800434B1C /* TestDataFetchRequest.swift in Sources */,
 				7D9688C7278B2C03002DAB46 /* SampleAreaSection.swift in Sources */,
@@ -505,6 +512,7 @@
 				7DF5DB2C2782AFA500F70A9F /* ColorResource.swift in Sources */,
 				7DA594652785DDF200E204CD /* IndentLabel.swift in Sources */,
 				7D7028CB277881AA00434B1C /* BaseRequest.swift in Sources */,
+				7D9E58BA2792C33B00543FBA /* SampleFooter.swift in Sources */,
 				7DAD05CD27783894001DAF62 /* SceneDelegate.swift in Sources */,
 				7DF5DB3D2782E62500F70A9F /* UIView+Extension.swift in Sources */,
 				7DF5DB302782B42B00F70A9F /* DebugViewController.swift in Sources */,
