@@ -9,6 +9,7 @@ final class SampleCollectionViewDataSource: NSObject {
     ) {
         collectionView.register(SampleCollectionViewCell.self, forCellWithReuseIdentifier: SampleCollectionViewCell.identifier)
         collectionView.register(SampleHeader.self, forSupplementaryViewOfKind: ElementKind.header.type, withReuseIdentifier: SampleHeader.identifier)
+        collectionView.register(SampleFooter.self, forSupplementaryViewOfKind: ElementKind.footer.type, withReuseIdentifier: SampleFooter.identifier)
         collectionView.dataSource = self
         collectionView.delegate = self
     }
@@ -69,6 +70,16 @@ extension SampleCollectionViewDataSource: UICollectionViewDataSource {
                 else { return UICollectionReusableView() }
                 header.update(hasSubTitle: true)
                 return header
+            case UICollectionView.elementKindSectionFooter:
+                guard
+                    let footer = collectionView.dequeueReusableSupplementaryView(
+                        ofKind: ElementKind.footer.type,
+                        withReuseIdentifier: SampleFooter.identifier,
+                        for: indexPath) as? SampleFooter
+                else {
+                        return UICollectionReusableView()
+                    }
+                return footer
             default:
                 return UICollectionReusableView()
         }

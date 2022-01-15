@@ -45,7 +45,7 @@ struct SampleAreaSection: SectionConfiguration {
             withReuseIdentifier: SampleCollectionViewCell.identifier,
             for: indexPath) as? SampleCollectionViewCell {
             cell.backgroundColor = .blue
-            cell.configure(text: "test")
+            cell.configure(text: "horizontal")
             return cell
         }
         return UICollectionViewCell()
