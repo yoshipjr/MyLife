@@ -21,6 +21,7 @@
 		7D9688CB278BDA42002DAB46 /* SampleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9688CA278BDA42002DAB46 /* SampleHeader.swift */; };
 		7D9E58B82792B76B00543FBA /* SampleVerticalAreaSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9E58B72792B76B00543FBA /* SampleVerticalAreaSection.swift */; };
 		7D9E58BA2792C33B00543FBA /* SampleFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9E58B92792C33B00543FBA /* SampleFooter.swift */; };
+		7D9E58BD2793041900543FBA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9E58BC2793041900543FBA /* MapViewController.swift */; };
 		7DA594622785D92200E204CD /* UIPartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA594612785D92200E204CD /* UIPartsViewController.swift */; };
 		7DA594652785DDF200E204CD /* IndentLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA594642785DDF200E204CD /* IndentLabel.swift */; };
 		7DA594682785DF6400E204CD /* IndentLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA594672785DF6400E204CD /* IndentLabelViewController.swift */; };
@@ -78,6 +79,7 @@
 		7D9688CA278BDA42002DAB46 /* SampleHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHeader.swift; sourceTree = "<group>"; };
 		7D9E58B72792B76B00543FBA /* SampleVerticalAreaSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleVerticalAreaSection.swift; sourceTree = "<group>"; };
 		7D9E58B92792C33B00543FBA /* SampleFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleFooter.swift; sourceTree = "<group>"; };
+		7D9E58BC2793041900543FBA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		7DA594612785D92200E204CD /* UIPartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPartsViewController.swift; sourceTree = "<group>"; };
 		7DA594642785DDF200E204CD /* IndentLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentLabel.swift; sourceTree = "<group>"; };
 		7DA594672785DF6400E204CD /* IndentLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentLabelViewController.swift; sourceTree = "<group>"; };
@@ -196,6 +198,14 @@
 				7D9E58B92792C33B00543FBA /* SampleFooter.swift */,
 			);
 			path = SampleCollectionView;
+			sourceTree = "<group>";
+		};
+		7D9E58BB2793040500543FBA /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				7D9E58BC2793041900543FBA /* MapViewController.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		7DA594602785D90A00E204CD /* UIParts */ = {
@@ -332,6 +342,7 @@
 		7DF5DB392782DFE700F70A9F /* Debug */ = {
 			isa = PBXGroup;
 			children = (
+				7D9E58BB2793040500543FBA /* Map */,
 				7DA594602785D90A00E204CD /* UIParts */,
 				7DF5DB2F2782B42B00F70A9F /* DebugViewController.swift */,
 				7DF5DB3A2782DFFB00F70A9F /* DebugListViewCell.swift */,
@@ -507,6 +518,7 @@
 				7DF5DB372782BEA700F70A9F /* NavigationController.swift in Sources */,
 				7DF5DB272782A73900F70A9F /* TabBarController.swift in Sources */,
 				7DA594682785DF6400E204CD /* IndentLabelViewController.swift in Sources */,
+				7D9E58BD2793041900543FBA /* MapViewController.swift in Sources */,
 				7DF5DB342782BA4300F70A9F /* FavoriteViewController.swift in Sources */,
 				7D9688C5278B1BAE002DAB46 /* SampleCollectionViewCell.swift in Sources */,
 				7DF5DB2C2782AFA500F70A9F /* ColorResource.swift in Sources */,
