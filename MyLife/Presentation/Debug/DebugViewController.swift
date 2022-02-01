@@ -3,6 +3,7 @@ import UIKit
 enum DebugMenu: Int, CaseIterable {
     case webView = 0
     case UIParts
+    case swiftUI
 
     var contents: (title: String, description: String, url: URL) {
         switch self {
@@ -10,7 +11,10 @@ enum DebugMenu: Int, CaseIterable {
                 return (title: "webView", description: "webViewの表示", url: URL(string: "emptyUrl")!)
 
             case .UIParts:
-                return (title: "UIparts", description: "UIpartsの表示", url: URL(string: "emptyUrl")!)
+                return (title: "UIparts", description: "UIKitでのUIpartsの表示", url: URL(string: "emptyUrl")!)
+
+            case .swiftUI:
+                return (title: "SwiftUI", description: "SwiftUIでのUIpartsの表示", url: URL(string: "emptyUrl")!)
         }
     }
 }
@@ -78,6 +82,10 @@ extension DebugViewController: UITableViewDelegate {
             case DebugMenu.UIParts.rawValue:
                 let vc = UIPartsViewController()
                 self.navigationController?.pushViewController(vc, animated: true)
+
+            case DebugMenu.swiftUI.rawValue:
+                break
+                
             default:
                 break
         }
