@@ -79,7 +79,14 @@ extension UIPartsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch UIParts(rawValue: indexPath.row) {
             case .indentLabel:
-                let vc = IndentLabelViewController()
+                let component = IndentLabel(insets: UIEdgeInsets(top: 10, left: 5, bottom: 10, right: 5))
+                component.numberOfLines = 0
+                component.text = "testtestesttesttesttestestse"
+                let vc = ComponentContainerViewController(
+                    component: component,
+                    componentWidth: self.view.frame.size.width,
+                    componentHeight: 300
+                )
                 self.navigationController?.pushViewController(vc, animated: true)
 
             case .button:
