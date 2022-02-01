@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D0AD8F127A9427200450F97 /* ComponentContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0AD8F027A9427200450F97 /* ComponentContainerViewController.swift */; };
 		7D7028C82778811F00434B1C /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7028C72778811F00434B1C /* APIClient.swift */; };
 		7D7028CB277881AA00434B1C /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7028CA277881AA00434B1C /* BaseRequest.swift */; };
 		7D7028CD27788FB300434B1C /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7028CC27788FB300434B1C /* APIError.swift */; };
@@ -23,7 +24,6 @@
 		7D9E58BA2792C33B00543FBA /* SampleFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9E58B92792C33B00543FBA /* SampleFooter.swift */; };
 		7DA594622785D92200E204CD /* UIPartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA594612785D92200E204CD /* UIPartsViewController.swift */; };
 		7DA594652785DDF200E204CD /* IndentLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA594642785DDF200E204CD /* IndentLabel.swift */; };
-		7DA594682785DF6400E204CD /* IndentLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA594672785DF6400E204CD /* IndentLabelViewController.swift */; };
 		7DAD05CB27783894001DAF62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAD05CA27783894001DAF62 /* AppDelegate.swift */; };
 		7DAD05CD27783894001DAF62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAD05CC27783894001DAF62 /* SceneDelegate.swift */; };
 		7DAD05CF27783894001DAF62 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAD05CE27783894001DAF62 /* HomeViewController.swift */; };
@@ -64,6 +64,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D0AD8F027A9427200450F97 /* ComponentContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentContainerViewController.swift; sourceTree = "<group>"; };
 		7D7028C72778811F00434B1C /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		7D7028CA277881AA00434B1C /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
 		7D7028CC27788FB300434B1C /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
@@ -80,7 +81,6 @@
 		7D9E58B92792C33B00543FBA /* SampleFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleFooter.swift; sourceTree = "<group>"; };
 		7DA594612785D92200E204CD /* UIPartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPartsViewController.swift; sourceTree = "<group>"; };
 		7DA594642785DDF200E204CD /* IndentLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentLabel.swift; sourceTree = "<group>"; };
-		7DA594672785DF6400E204CD /* IndentLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentLabelViewController.swift; sourceTree = "<group>"; };
 		7DAD05C727783894001DAF62 /* MyLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DAD05CA27783894001DAF62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DAD05CC27783894001DAF62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -218,7 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				7D9688C1278B1A8F002DAB46 /* SampleCollectionView */,
-				7DA594672785DF6400E204CD /* IndentLabelViewController.swift */,
+				7D0AD8F027A9427200450F97 /* ComponentContainerViewController.swift */,
 			);
 			path = CompoentsViewController;
 			sourceTree = "<group>";
@@ -498,6 +498,7 @@
 				7DF5DB3B2782DFFB00F70A9F /* DebugListViewCell.swift in Sources */,
 				7D7028CF2779EC1800434B1C /* TestDataFetchRequest.swift in Sources */,
 				7D9688C7278B2C03002DAB46 /* SampleAreaSection.swift in Sources */,
+				7D0AD8F127A9427200450F97 /* ComponentContainerViewController.swift in Sources */,
 				7D9688C0278B08F5002DAB46 /* SampleCollectionViewController.swift in Sources */,
 				7D9688C3278B1AC0002DAB46 /* SampleCollectionViewDataSource.swift in Sources */,
 				7DAD05CB27783894001DAF62 /* AppDelegate.swift in Sources */,
@@ -506,7 +507,6 @@
 				7D9688CB278BDA42002DAB46 /* SampleHeader.swift in Sources */,
 				7DF5DB372782BEA700F70A9F /* NavigationController.swift in Sources */,
 				7DF5DB272782A73900F70A9F /* TabBarController.swift in Sources */,
-				7DA594682785DF6400E204CD /* IndentLabelViewController.swift in Sources */,
 				7DF5DB342782BA4300F70A9F /* FavoriteViewController.swift in Sources */,
 				7D9688C5278B1BAE002DAB46 /* SampleCollectionViewCell.swift in Sources */,
 				7DF5DB2C2782AFA500F70A9F /* ColorResource.swift in Sources */,
